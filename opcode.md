@@ -60,28 +60,30 @@
 
   
 ## pseudo instruction
-beqz -> [beq](#beq) rs1, x0, offset
-bgez -> [bge](#bge) rs1, x0, offset
-bgt -> [blt](#blt) rs2, rs1, offset
-bgtu -> [bltu](#bltu) rs1, x0, offset
-bgtz -> [blt](#blt) x0, rs2 offset
-ble -> [bge](#bge) rs1, x0, offset
-bleu -> [bgeu](#bgeu) rs2, rs1, offset
-blez -> [bge](#bge) x0, rs2, offset
-bltz -> [blt](#blt) rs1, x0, offset
-bnez -> [bne](#bne) rs1, x0, offset
-
-j -> [jal](#jal) x0, offset
-jr -> [jalr](#jalr) x0, 0(rs1)
-li -> [addi](#addi) rd, x0, immediate
-mv -> [addi](#addi) rd, rs1, 0
-neg -> [sub](#sub) rd, x0, rs2
-not -> [xori](#xori) rd, rs1, -1
-ret -> [jalr](#jr) x0, 0(x1)
-seqz -> [sltiu](#sltiu) rd, rs1, 1
-sgtz -> [slt](#slt) rd, x0, rs2
-sltz -> [slt](#slt) rd, rs1, x0
-snez -> [sltu](#sltu) rd, x0, rs2
+| pseuso | implement |
+| ------ | --------- |
+|beqz | [beq](#beq) rs1, x0, offset|
+|bgez | [bge](#bge) rs1, x0, offset|
+|bgt | [blt](#blt) rs2, rs1, offset|
+|bgtu | [bltu](#bltu) rs1, x0, offset|
+|bgtz | [blt](#blt) x0, rs2 offset|
+|ble | [bge](#bge) rs1, x0, offset|
+|bleu | [bgeu](#bgeu) rs2, rs1, offset|
+|blez | [bge](#bge) x0, rs2, offset|
+|bltz | [blt](#blt) rs1, x0, offset|
+|bnez | [bne](#bne) rs1, x0, offset|
+| ---- |----- |
+|j | [jal](#jal) x0, offset|
+|jr | [jalr](#jalr) x0, 0(rs1)|
+|li | [addi](#addi) rd, x0, immediate|
+|mv | [addi](#addi) rd, rs1, 0|
+|neg | [sub](#sub) rd, x0, rs2|
+|not | [xori](#xori) rd, rs1, -1|
+|ret | [jalr](#jr) x0, 0(x1)|
+|seqz | [sltiu](#sltiu) rd, rs1, 1|
+|sgtz | [slt](#slt) rd, x0, rs2|
+|sltz | [slt](#slt) rd, rs1, x0|
+|snez | [sltu](#sltu) rd, x0, rs2|
 
 
 
