@@ -18,9 +18,9 @@
 
 ## EHelpers with func7
 * <span id="srai">***srai***</span>
-  - func7 =  0 : rtl_shri (srai)
+  - func7 =  0 : rtl_shri (srli)
   - func7 =  1 : 
-  - func7 = 32 : rtl_sari (srli)
+  - func7 = 32 : rtl_sari (srai)
 
 * <span id="add">***add***</span>
   - func7 =  0 : rtl_add (add)
